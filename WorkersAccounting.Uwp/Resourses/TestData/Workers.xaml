@@ -1,0 +1,25 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:g="using:System.Collections.Generic" 
+                    xmlns:e="using:WorkersAccounting.Entities" xmlns:system="using:System" xmlns:convertors="using:WorkersAccounting.Uwp.Convertors">
+    <convertors:DateOnlyParameterConvertor x:Key="dateOnlyParameterConvertor"/>
+    <e:WorkerList x:Key="TestWorkers">
+        <e:Worker FirstName="Yaroslav"
+                  LastName="Vorobyov"
+                  Description="Trainee"
+                  HourTimeWorking="400"
+                  BirthDay="2002/02/02"
+                  />
+        <e:Worker FirstName="Sergey"
+                  LastName="Nemchinskii"
+                  Description="Youtuver"
+                  HourTimeWorking="9999">
+        </e:Worker>
+        <e:Worker FirstName="Ivan"
+                  LastName="Ivanov"
+                  Description="Template worker"
+                  HourTimeWorking="9999"
+                  >
+        </e:Worker>
+    </e:WorkerList>
+</ResourceDictionary>
