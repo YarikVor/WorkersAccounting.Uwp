@@ -8,7 +8,6 @@
                   LastName="Vorobyov"
                   Description="Trainee"
                   HourTimeWorking="400"
-                  BirthDay="2002/02/02"
                   />
         <e:Worker FirstName="Sergey"
                   LastName="Nemchinskii"
