@@ -2,22 +2,25 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:g="using:System.Collections.Generic" 
                     xmlns:e="using:WorkersAccounting.Entities" xmlns:system="using:System" xmlns:convertors="using:WorkersAccounting.Uwp.Convertors">
-    <convertors:DateOnlyParameterConvertor x:Key="dateOnlyParameterConvertor"/>
     <e:WorkerList x:Key="TestWorkers">
         <e:Worker FirstName="Yaroslav"
                   LastName="Vorobyov"
                   Description="Trainee"
                   HourTimeWorking="400"
+                  Gender="Male"
                   />
         <e:Worker FirstName="Sergey"
                   LastName="Nemchinskii"
                   Description="Youtuver"
-                  HourTimeWorking="9999">
+                  HourTimeWorking="9999"
+                  Gender="Male"
+                  >
         </e:Worker>
-        <e:Worker FirstName="Ivan"
+        <e:Worker FirstName="Ivanna"
                   LastName="Ivanov"
                   Description="Template worker"
                   HourTimeWorking="9999"
+                  Gender="Female"
                   >
         </e:Worker>
     </e:WorkerList>

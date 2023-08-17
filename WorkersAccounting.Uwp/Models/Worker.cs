@@ -1,5 +1,6 @@
 using System;
-using System.Collections.Generic;
+using Windows.Media.SpeechSynthesis;
+using WorkersAccounting.Uwp.Models;
 
 namespace WorkersAccounting.Entities;
 
@@ -10,9 +11,5 @@ public class Worker
     public DateTime BirthDay { get; set; }
     public int HourTimeWorking { get; set; }
     public string? Description { get; set; }
-}
-
-public class WorkerList: List<Worker>
-{
-
+    public Gender Gender { get; set; } = Gender.Other;
 }
