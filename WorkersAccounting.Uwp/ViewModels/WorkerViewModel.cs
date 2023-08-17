@@ -1,7 +1,8 @@
-using System;
 using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
+using System;
+using System.Collections.Generic;
 using WorkersAccounting.Entities;
+using WorkersAccounting.Uwp.Models;
 
 namespace WorkersAccounting.ViewModels;
 
@@ -62,11 +63,12 @@ public partial class WorkerViewModel : ObservableObject
             (originModel, newValue) => originModel.Description = newValue);
     }
 
-    [RelayCommand]
-    public void Save()
+    public Gender Gender
     {
-        Model.FirstName = FirstName;
-
-        OnPropertyChanged(nameof(Model));
+        get => Model.Gender;
+        set => SetProperty(Model.Gender, value, Model,
+            (originModel, newValue) => originModel.Gender = newValue);
     }
+
+    public IEnumerable<Gender> Genders => GenderMethods.GetEnumTypes;
 }

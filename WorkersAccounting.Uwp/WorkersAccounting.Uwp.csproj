@@ -126,10 +126,14 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Convertors\DateOnlyConvertor.cs" />
+    <Compile Include="Convertors\NullableDateTimeOffsetToDateTimeConvertor.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Gender.cs" />
+    <Compile Include="Models\GenderMethods.cs" />
     <Compile Include="Models\Worker.cs" />
+    <Compile Include="Models\WorkerList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\WorkerViewModel.cs" />
@@ -173,6 +177,9 @@
     <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
       <Version>7.1.3</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MarkupExtensions\EnumItemsMarkupExtension.cs" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
